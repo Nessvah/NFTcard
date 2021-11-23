@@ -28,7 +28,7 @@ hr {
 
 /* CONTAINER */
 
-#container {
+#main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -48,9 +48,11 @@ hr {
 }
 
 /* IMAGE */
+
  .images {
         position: relative;
-        width: 360px; /* can be omitted for a regular non-lazy image */
+        height: 302px;
+        width: 360px; 
         max-width: 100%;
 
  }
@@ -61,7 +63,13 @@ hr {
     border-radius: 8px;
 }
 
-.images img.equilibrium-hover {
+.images:hover {
+    background-color: #00FFF8;
+    opacity: 0.9;
+    border-radius: 8px;
+}
+
+.images img.view-hover {
     position: absolute;
     top: 120px;
     right: auto;
@@ -70,12 +78,8 @@ hr {
     opacity: 0;
 }
 
-   
-.images:hover img.equilibrium-hover {
-    background-color: #00FFF8;
-    opacity: 0.9;
-    border-radius: 8px;
-    
+.images:hover img.view-hover {
+    opacity: 1;
 }
 
 /* CONTENT CARD */
@@ -135,12 +139,16 @@ hr {
 /*FOOTER*/
 
 .attribution { 
-    font-size: 11px; 
+    color: white;
+    font-size: 12px; 
     text-align: center;
-    padding-top: 20vh;
+    padding-top: 15vh;
  }
 
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+    text-decoration: none;
+}
 
 
 /* ACTIVE STATE */
