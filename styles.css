@@ -48,7 +48,12 @@ hr {
 }
 
 /* IMAGE */
+ .images {
+        position: relative;
+        width: 360px; /* can be omitted for a regular non-lazy image */
+        max-width: 100%;
 
+ }
 .equilibrium {
     object-fit: cover;
     width: 100%;
@@ -56,10 +61,19 @@ hr {
     border-radius: 8px;
 }
 
-.equilibrium:hover {
-    cursor: pointer;
+.images img.equilibrium-hover {
+    position: absolute;
+    top: 120px;
+    right: auto;
+    bottom: auto;
+    left: 152px;
+    opacity: 0;
+}
+
+   
+.images:hover img.equilibrium-hover {
     background-color: #00FFF8;
-    opacity: 0.5;
+    opacity: 0.9;
     border-radius: 8px;
     
 }
@@ -130,6 +144,16 @@ hr {
 
 
 /* ACTIVE STATE */
+
+.equilibrium:hover {
+    cursor: pointer;
+    background: url(./images/icon-view.svg);
+    width: 100%;
+    height: 302px;
+    opacity: 0.5;
+    border-radius: 8px;
+    
+}
 
 
 .name:hover, h1:hover {
