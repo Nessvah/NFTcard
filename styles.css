@@ -36,7 +36,11 @@ p {
     
 }
 
-
+div.img {
+    width: 150px;
+    height: 150px;
+    content:icon;
+}
 .content {
     text-align: left;
     color: hsl(0, 0%, 100%);
