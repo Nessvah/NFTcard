@@ -52,7 +52,7 @@ Another major difficulty was the hover state on the image.
 
 ### Continued development
 
-Need to continue to practice the basics for html and css specially about positioning and layouts. 
+Need to continue to practice the basics for html and css especially about positioning and layouts. 
 
 
 ## Author
