@@ -11,6 +11,8 @@ h1 {
     font-weight: 600;
 }
 
+
+
 p {
     color: #8BACD9;
     font-weight: 300;
@@ -24,6 +26,8 @@ hr {
     border: none;
 }
 
+/* CONTAINER */
+
 #container {
     display: flex;
     flex-wrap: wrap;
@@ -33,6 +37,8 @@ hr {
 }
 
 
+/* 1 CARD */
+
 .card {
     padding: 24px 24px 12px 24px;
     background-color: #15263F;
@@ -41,7 +47,7 @@ hr {
     border-radius: 12px;
 }
 
-
+/* IMAGE */
 
 .equilibrium {
     object-fit: cover;
@@ -49,6 +55,16 @@ hr {
     height: 302px;
     border-radius: 8px;
 }
+
+.equilibrium:hover {
+    cursor: pointer;
+    background-color: #00FFF8;
+    opacity: 0.5;
+    border-radius: 8px;
+    
+}
+
+/* CONTENT CARD */
 
 .icon {
     position: relative;
@@ -69,6 +85,15 @@ hr {
     font-weight: 600;
 }
 
+.days {
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 6px;
+    float: right;
+    padding-bottom: 2px;
+}
+
+/* CREATOR */ 
 
 .creation {
     font-weight: 400;
@@ -78,13 +103,7 @@ hr {
     margin-top: 22px;
 }
 
-.days {
-    font-weight: 400;
-    font-size: 16px;
-    margin-left: 6px;
-    float: right;
-    padding-bottom: 2px;
-}
+
 .avatar {
     float: left;
     width: 33px;
@@ -98,6 +117,7 @@ hr {
     color: #fff;
 }
 
+
 /*FOOTER*/
 
 .attribution { 
@@ -106,5 +126,13 @@ hr {
     padding-top: 20vh;
  }
 
-
 .attribution a { color: hsl(228, 45%, 44%); }
+
+
+/* ACTIVE STATE */
+
+
+.name:hover, h1:hover {
+    color: #00FFF8;
+    cursor: pointer;
+}
